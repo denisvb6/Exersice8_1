@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <form role="form">
+            <h2>Poll title</h2>
+            <div id="pollQuestion">Is this accessible?</div>
+            <section name="pollGroup" role="radiogroup">
+                <div role="radiogroup" aria-label="Poll title">
+                    <label for="input__yes" class="sr-only">Yes</label>
+                    <input
+                        type="radio"
+                        name="poll"
+                        aria-labelledby="pollQuestion"
+                        value="[object Object]"
+                        id="input__yes"
+                    />
+                    <span>Yes</span>
+
+                    <label for="input__no" class="sr-only">No</label>
+                    <input
+                        type="radio"
+                        name="poll"
+                        aria-labelledby="pollQuestion"
+                        value="[object Object]"
+                        id="input__no"
+                    />
+                    <span>No</span>
+
+                    <label for="input__maybe" class="sr-only">Maybe</label>
+                    <input
+                        type="radio"
+                        name="poll"
+                        aria-labelledby="pollQuestion"
+                        value="[object Object]"
+                        id="input__maybe"
+                    />
+                    <span>Maybe</span>
+
+                    <label for="input__can" class="sr-only"
+                        >Can you repeat the question?</label
+                    >
+                    <input
+                        type="radio"
+                        name="poll"
+                        aria-labelledby="pollQuestion"
+                        value="[object Object]"
+                        id="input__can"
+                    />
+                    <span>Can you repeat the question?</span>
+                </div>
+
+                <button type="submit">Vote</button>
+            </section>
+        </form>
+    </body>
+</html>
